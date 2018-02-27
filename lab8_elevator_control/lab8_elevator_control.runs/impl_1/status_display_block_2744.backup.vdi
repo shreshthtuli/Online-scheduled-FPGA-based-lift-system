@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Thu Oct 12 17:00:26 2017
+# Process ID: 2744
+# Current directory: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1
+# Command line: vivado.exe -log status_display_block.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source status_display_block.tcl -notrace
+# Log file: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/status_display_block.vdi
+# Journal file: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source status_display_block.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "status_display_block.tcl" line 46)
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 12 17:00:29 2017...

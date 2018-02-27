@@ -1,0 +1,9 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FTC_HXILINX_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity D2_4E_HXILINX_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity CB2CE_HXILINX_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity Clocking_MUSER_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity Binary_to_Seven_MUSER_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity Mux_MUSER_lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity lab4_seven_segment_display
+INFO: [VRFC 10-307] analyzing entity lab8_elevator_control

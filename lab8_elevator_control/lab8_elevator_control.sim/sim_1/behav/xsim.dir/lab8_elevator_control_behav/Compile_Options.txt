@@ -1,0 +1,1 @@
+-wto "5d2f2902ce154bfe8fd8e10f3e5885d1" --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "lab8_elevator_control_behav" "xil_defaultlib.lab8_elevator_control" -log "elaborate.log" 

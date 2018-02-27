@@ -1,0 +1,4 @@
+Running: xsim.dir/lab8_elevator_control_behav/xsimk.exe -simmode gui -wdb lab8_elevator_control_behav.wdb -simrunnum 0 -socket 50318
+Design successfully loaded
+Design Loading Memory Usage: 6124 KB (Peak: 6124 KB)
+Design Loading CPU Usage: 46 ms
