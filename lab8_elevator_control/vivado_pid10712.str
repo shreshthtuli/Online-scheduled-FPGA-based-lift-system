@@ -1,0 +1,958 @@
+/*
+
+Vivado v2017.2 (64-bit)
+SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+
+Process ID: 10712
+License: Customer
+
+Current time: 	10/12/17 3:05:44 PM IST
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 239 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/java.exe
+Java library paths: C:/Xilinx/Vivado/2017.2/bin/unwrapped/win64.o;C:/WINDOWS/Sun/Java/bin;C:/WINDOWS/system32;C:/WINDOWS;C:/Xilinx/Vivado/2017.2/bin;C:/Xilinx/Vivado/2017.2/lib/win64.o;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin/server;C:/Xilinx/Vivado/2017.2/tps/win64/jre/bin;C:/Xilinx/SDK/2017.2/bin;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2017.2/ids_lite/ISE/lib/nt64;C:/Xilinx/Vivado_HLS/2017.2/bin;C:/ProgramData/Oracle/Java/javapath;C:/Program Files (x86)/Common Files/Intel/Shared Libraries/redist/intel64/compiler;C:/Program Files (x86)/Intel/iCLS Client/;C:/Program Files/Intel/iCLS Client/;C:/Windows/system32;C:/Windows;C:/Windows/System32/Wbem;C:/Windows/System32/WindowsPowerShell/v1.0/;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files/Intel/Intel(R) Management Engine Components/DAL;C:/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files/Intel/Intel(R) Management Engine Components/IPT;C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common;C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/110/Tools/Binn/;C:/Program Files (x86)/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/Tools/Binn/;C:/Program Files/Microsoft SQL Server/120/DTS/Binn/;C:/Program Files (x86)/Windows Kits/8.1/Windows Performance Toolkit/;C:/Program Files/Java/jdk1.8.0_144/bin;C:/Program Files/MATLAB/R2016a/runtime/win64;C:/Program Files/MATLAB/R2016a/bin;C:/Program Files/MATLAB/R2016a/polyspace/bin;C:/Users/user/AppData/Local/Microsoft/WindowsApps;;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/bin;C:/Xilinx/Vivado/2017.2/tps/mingw/6.2.0/win64.o/nt/libexec/gcc/x86_64-w64-mingw32/6.2.0;.
+
+User name: 	Shreshth and Shikhar
+User home directory: C:/Users/user
+User working directory: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.2
+RDI_DATADIR: C:/Xilinx/Vivado/2017.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.2/bin
+
+User preferences location: C:/Users/user/AppData/Roaming/Xilinx/Vivado
+Vivado preferences directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2017.2/vivado.xml
+Vivado layouts directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2017.2/layouts
+PlanAhead jar location: 	C:/Xilinx/Vivado/2017.2/lib/classes/planAhead.jar
+Vivado Look & Feel: 	[Synthetica - the extended Synth Look and Feel. - ui.g.i.H]
+Engine tmp dir: 	C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/.Xil/Vivado-10712-DESKTOP-9UFTEMN
+
+GUI allocated memory:	186 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 646 MB
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 39 MB (+37910kb) [00:00:03]
+// [Engine Memory]: 482 MB (+353696kb) [00:00:03]
+// Opening Vivado Project: C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control\lab8_elevator_control.xpr. Version: Vivado v2017.2 
+// bs:g (cg:JFrame):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+15668kb) [00:00:05]
+// [Engine Memory]: 614 MB (+113745kb) [00:00:05]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'. 
+// [GUI Memory]: 74 MB (+16054kb) [00:00:06]
+// Project name: lab8_elevator_control; location: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control; part: xc7a35tcpg236-1
+// [Engine Memory]: 651 MB (+5967kb) [00:00:06]
+dismissDialog("Open Project"); // bs:g (cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 656 MB. GUI used memory: 37 MB. Current time: 10/12/17 3:05:46 PM IST
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 79 MB (+1887kb) [00:05:32]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 83 MB (+508kb) [00:08:58]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 88 MB (+262kb) [00:11:00]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 899 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lift1_controller(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 93 MB (+604kb) [00:15:24]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_elevator_control(Behavioral) (lab8_elevator_control.vhd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_elevator_control(Behavioral) (lab8_elevator_control.vhd)]", 2, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 254, 655); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 57 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 170, 482); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 30 seconds
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 252, 603); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 252, 603); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 252, 603, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 252, 603); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 252, 603); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 46 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 154, 518); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 166, 388); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 154, 69); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 154, 69, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 200, 155); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 288, 429); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lift2_controller(Behavioral) (lab8_elevator_control.vhd)]", 3, false); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_elevator_control(Behavioral) (lab8_elevator_control.vhd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_elevator_control(Behavioral) (lab8_elevator_control.vhd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectCodeEditor("lab8_elevator_control.vhd", 82, 229); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 49 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 188, 479); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 207, 398); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 207, 398, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, lab8_elevator_control(Behavioral) (lab8_elevator_control.vhd)]", 2, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true, false, false, false, false, true); // B:i (D:JPanel, cg:JFrame) - Double Click - Node
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+selectButton(RDIResourceCommand.RDICommands_COPY, (String) null); // B:JideButton (f:CommandBar, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 27 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 112, 585); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 25 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 215, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 215, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 215, 405, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 215, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 215, 405); // bI:J (JPanel:JComponent, cg:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1); // B:i (D:JPanel, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectCodeEditor("lab8_elevator_control.vhd", 127, 156); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 363, 167); // bI:J (JPanel:JComponent, cg:JFrame)
+selectButton(PAResourceAtoD.AbstractFileView_RELOAD, "Reload"); // h:k (JPanel:JComponent, cg:JFrame)
+// [GUI Memory]: 101 MB (+3114kb) [00:21:09]
+// [GUI Memory]: 109 MB (+3740kb) [00:21:10]
+// [GUI Memory]: 115 MB (+375kb) [00:21:14]
+// Elapsed time: 35 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 157, 559); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 146 MB (+26003kb) [00:21:22]
+// [Engine Memory]: 689 MB (+5613kb) [00:21:22]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 42 MB. Current time: 10/12/17 3:27:01 PM IST
+selectCodeEditor("lab8_elevator_control.vhd", 74, 270); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 430, 389); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 416, 387); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 12 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 129, 617); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 468, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 437, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 442, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("lab8_elevator_control.vhd", 433, 589); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 475, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 415, 378); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 418, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 421, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 454, 426); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 17 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 429, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 325, 633); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 103, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 337, 447); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 351, 312); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 218, 326); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 351, 343); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 354, 371); // bI:J (JPanel:JComponent, cg:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 221, 331); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 413, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 219, 467); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 299, 516); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 180, 318); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 171, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("lab8_elevator_control.vhd", 237, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 77, 547); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 84, 550); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 231, 363); // bI:J (JPanel:JComponent, cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 715 MB. GUI used memory: 42 MB. Current time: 10/12/17 3:30:31 PM IST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 282, 759); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 279, 797); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 182, 538); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 67 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 342, 507); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 263, 439); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 55, 640); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 63, 735); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 438, 521); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 413, 214); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 537, 482); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 269, 225); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 261, 245); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 319, 417); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 344, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 345, 415); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 449, 489); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 131, 521); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 55, 604); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 299, 599); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 217, 465); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 147, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 135, 277); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 121, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 133, 207); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 118, 227); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 135, 517); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 75, 265); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 101, 311); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 142, 269); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 83, 305); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 122, 161); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 74, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 83, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 179 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 189, 425); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 599 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c:g (cg:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES, "Add or create constraints"); // a:JRadioButton (JPanel:JComponent, c:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+selectButton(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES, "Add Files"); // a:JButton (C:JPanel, c:g)
+setFileChooser("C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.xdc");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, c:g)
+// 'h' command handler elapsed time: 6 seconds
+// [Engine Memory]: 734 MB (+11235kb) [00:43:33]
+dismissDialog("Add Sources"); // c:g (cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset constrs_1 -norecurse C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.xdc 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// f:p (cg:JFrame): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 15:49:15 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 15:49:15 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 742 MB. GUI used memory: 47 MB. Current time: 10/12/17 3:49:17 PM IST
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 766 MB. GUI used memory: 47 MB. Current time: 10/12/17 3:49:32 PM IST
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'lift1_status': port width = 4, actual width = 2 [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1303]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1303;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'lift1_status': port width = 4, actual width = 2 [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1303]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 301, 195); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 297, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 298, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 306, 211); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 309, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1314;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 44 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 2, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 251, 829); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 15:51:04 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 15:51:04 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 17 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 890 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 187, 507); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 258, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("lab8_elevator_control.vhd", 277, 217); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 277, 291); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 297, 449); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 297, 450, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 292, 461); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 357, 445); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 351, 450); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 87, 337); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 87, 228); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 104, 330); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 34 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 273, 421); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 273, 421, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 226, 428); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 226, 428, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 175, 451); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 175, 451, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 174, 423); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 174, 423, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 390, 379); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 390, 379, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 286, 413); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 19 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 332, 612); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 331, 612); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// ak:q (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, ak:q)
+// bs:g (cg:JFrame):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+dismissDialog("Save Project"); // ak:q (cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+// 'cp' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:08:18 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:08:18 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near PROCESS [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1320]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1320;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near PROCESS [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1320]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 94, 455); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 56, 455); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 56, 455, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 51, 451); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 319, 645); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:08:59 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:08:59 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1314;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] nested clocked statements not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1314]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 227 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 509, 313); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 337, 309); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 337, 309, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 191, 334); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 176, 411); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 176, 411, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 179, 193); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, status_display_block(Behavioral) (lab8_elevator_control.vhd)]", 1, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+// [Engine Memory]: 783 MB (+13221kb) [01:07:38]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // B:i (D:JPanel, cg:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // B:i (D:JPanel, cg:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Z:JMenu (ai:JPopupMenu, cg:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ac:JMenuItem (ai:JPopupMenu, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("lab8_elevator_control.vhd", 225, 129); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 217, 197); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 217, 197, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 259, 261); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 27 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 173, 383); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 175, 381); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 175, 381, false, false, false, false, true); // bI:J (JPanel:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 175, 360); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 249, 499); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis]", 4); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:14:04 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:14:04 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] non-clocking wait statement not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1318]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1318;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] non-clocking wait statement not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1318]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+// Elapsed time: 33 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 110, 491); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 105, 607); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 90, 620); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 19 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 108, 589); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'c'); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 179, 619); // bI:J (JPanel:JComponent, cg:JFrame)
+typeControlKey((HResource) null, "lab8_elevator_control.vhd", 'v'); // bI:J (JPanel:JComponent, cg:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 60, 606); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("lab8_elevator_control.vhd", 156, 649); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("lab8_elevator_control.vhd", 148, 634); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("lab8_elevator_control.vhd", 154, 329); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 14 seconds
+selectCodeEditor("lab8_elevator_control.vhd", 177, 739); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 245, 741); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("lab8_elevator_control.vhd", 172, 724); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("lab8_elevator_control.vhd", 263, 677); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:16:31 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:16:31 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 13 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1313]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1313;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1313]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1313;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1313]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1313]. ]", 1, false); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 0, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1313;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-27] else clause after check for clock not supported [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1313]. ]", 1, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 135, 609); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 46, 587); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 239, 572); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("lab8_elevator_control.vhd", 53, 581); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u:M (JViewport:JComponent, cg:JFrame) - Node
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation]", 5); // u:M (JViewport:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:17:11 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:17:11 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah:x (cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'lift1_status': port width = 4, actual width = 2 [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1428]. ]", 1, true); // ah:i (JViewport:JComponent, cg:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1428;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-549] port width mismatch for port 'lift1_status': port width = 4, actual width = 2 [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1428]. ]", 1, true, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click - Node
+selectCodeEditor("lab8_elevator_control.vhd", 243, 375); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 367, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 367, 433); // bI:J (JPanel:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 3 out of range [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1432]. ]", 3, false); // ah:i (JViewport:JComponent, cg:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\user\Desktop\COL215LAB\lab8_elevator_control\lab8_elevator_control.vhd;-;;-;16;-;line;-;1432;-;;-;16;-;"); // ah:i (JViewport:JComponent, cg:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-97] array index 3 out of range [C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control.vhd:1432]. ]", 3, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cg:JFrame) - Double Click
+selectCodeEditor("lab8_elevator_control.vhd", 380, 431); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 145, 792); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 145, 814); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 298, 535); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 298, 809); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 367, 382); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 367, 397); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 281, 399); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 286, 414); // bI:J (JPanel:JComponent, cg:JFrame)
+selectCodeEditor("lab8_elevator_control.vhd", 367, 468); // bI:J (JPanel:JComponent, cg:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u:M (JViewport:JComponent, cg:JFrame)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u:M (JViewport:JComponent, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// x:aN (cg:JFrame): No Implementation Results Available: addNotify
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, x:aN)
+// bs:g (cg:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // x:aN (cg:JFrame)
+// TclEventType: RUN_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f:p (cg:JFrame): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, f:p)
+dismissDialog("Launch Runs"); // f:p (cg:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Thu Oct 12 16:18:38 2017] Launched synth_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/synth_1/runme.log [Thu Oct 12 16:18:38 2017] Launched impl_1... Run output will be captured here: C:/Users/user/Desktop/COL215LAB/lab8_elevator_control/lab8_elevator_control/lab8_elevator_control.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah:x (cg:JFrame): Implementation Failed: addNotify
+// Elapsed time: 48 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ah:x)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah:x (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 783 MB. GUI used memory: 52 MB. Current time: 10/12/17 4:19:32 PM IST
